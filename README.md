@@ -19,6 +19,8 @@ pio run -d firmware -e reterminal_e1004 -t upload --upload-port PORT
 
 Replace `PORT` with the device's serial port. The first upload writes the bootloader, partition table, and application. Do not flash the application-only `firmware.bin` at offset zero. See [hardware and recovery](docs/HARDWARE.md) if the serial port or upload fails.
 
+For browser-based USB installation, see the separate [NYTDisplay Installer](https://github.com/AndrewMohawk/NYTDisplay-Installer) with an experimental merged factory image built from this firmware.
+
 ## Use
 
 On first boot, the display shows a setup QR code and starts a password-protected Wi-Fi network named **NYTDisplay**. Join it, open `http://192.168.4.1` if the setup page does not appear, and choose your home Wi-Fi. The device then downloads the five most recent editions.
@@ -31,4 +33,4 @@ The firmware fetches a dated JPEG from [Freedom Forum's Today's Front Pages](htt
 
 The code and original generated setup artwork are GPL-3.0-only; see [LICENSE](LICENSE) and [third-party notices](firmware/THIRD_PARTY.md). The device photo is included for illustration; its copyright remains with the photographer, and it does not license the newspaper content visible on its screen. This project is independent of and not endorsed by The New York Times or Freedom Forum.
 
-The firmware builds and the host image/QR checks pass. Physical installation, Wi-Fi setup, daily download, buttons, battery behavior, and OTA updating still need validation with this source edition. No prebuilt firmware or browser installer is included.
+The firmware builds and the host image/QR checks pass. Physical installation, Wi-Fi setup, daily download, buttons, battery behavior, and OTA updating still need validation with this source edition.
