@@ -19,7 +19,7 @@ pio run -d firmware -e reterminal_e1004 -t upload --upload-port PORT
 
 Replace `PORT` with the device's serial port. The first upload writes the bootloader, partition table, and application. Do not flash the application-only `firmware.bin` at offset zero. See [hardware and recovery](docs/HARDWARE.md) if the serial port or upload fails.
 
-For browser-based USB installation, see the separate [NYTDisplay Installer](https://github.com/AndrewMohawk/NYTDisplay-Installer) with an experimental merged factory image built from this firmware.
+For browser-based USB installation, see the separate [E1004 Web Flasher](https://github.com/AndrewMohawk/E1004-WebFlasher) with an experimental merged factory image built from this firmware.
 
 ## Use
 
